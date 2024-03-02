@@ -5,8 +5,7 @@ int main() {
     int a;
     cin >> a;
 
-    char d;
-    a = 1 ? d = 't' : d = 'f';
+    char d = (a == 1) ? 't' : 'f';
     cout << d;
     return 0;
 }
