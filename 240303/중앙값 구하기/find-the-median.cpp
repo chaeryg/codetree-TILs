@@ -21,7 +21,24 @@ int main() {
                 mid = b;
             }
             else{
-                mid =c;
+                mid = c;
+            }
+        }
+    }
+    else if(a<b)
+    {
+        if(a>c)
+        {
+            mid = a;
+        }
+        else if(a < c)
+        {
+            if(b>c)
+            {
+                mid = c;
+            }
+            else{
+                mid = b;
             }
         }
     }
