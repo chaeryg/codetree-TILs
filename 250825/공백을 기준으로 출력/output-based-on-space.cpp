@@ -6,19 +6,16 @@ using namespace std;
 string eraseBlank(string strA, string strB)
 {
     string str = strA + strB;
+    string newStr;
     for(int i = 0; i < str.length(); i++)
     {
-        if(str[i] == ' ')
+        if(str[i] != ' ')
         {
-            for(int j = i; j < str.length(); j++)
-            {
-                str[j] = str[j+1];
-            }
-            
+            newStr += str[i];
         }
     }
 
-    return str;
+    return newStr;
 }
 int main() {
     // Please write your code here.
