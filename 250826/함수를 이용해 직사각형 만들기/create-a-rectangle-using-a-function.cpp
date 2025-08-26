@@ -12,7 +12,7 @@ void printRenc(int n, int m)
         {
             cout << 1;
         }
-        cout << endl;
+        cout << "\n";
     }
 }
 int main() {
