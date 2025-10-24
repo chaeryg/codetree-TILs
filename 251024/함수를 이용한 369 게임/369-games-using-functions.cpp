@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -6,14 +7,16 @@ int a, b;
 
 bool Clap(int i)
 {
-        if((i%10)%3==0 || (i/10)%3==0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        } 
+    string i_str = to_string(i);
+    
+    if(i_str.find("3") != string::npos || i_str.find("6") != string::npos ||i_str.find("9") != string::npos)
+    {
+        return true;
+    }
+    else{
+
+        return false;
+    }
 }
 
 bool isThree(int i)
