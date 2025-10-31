@@ -5,6 +5,17 @@ using namespace std;
 int n, m;
 int arr[100];
 
+int sumSub(int a, int b)
+{
+    int sum = 0;
+
+    for(int i = a-1; i <= b-1; i++)
+    {
+        sum += arr[i];
+    }
+
+    return sum;
+}
 int main() {
     cin >> n >> m;
 
@@ -13,16 +24,11 @@ int main() {
     }
 
     for (int i = 0; i < m; i++) {
-        int sum = 0;
+        
         int a1, a2;
         cin >> a1 >> a2;
 
-        for(int j = a1; j <= a2; j++)
-        {
-            sum += arr[j-1];
-        }
-
-        cout << sum << endl;
+        cout << sumSub(a1,a2) << endl;
     }
 
     // Please write your code here.
